@@ -1,0 +1,33 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/29/2016
+#David Dickens
+#Ch_5 ex3
+
+# The following is used as a global constant
+# the contribution rate.
+#made 0.05 a float
+CONTRIBUTION_RATE = float(0.05)
+
+def main():
+    gross_pay = float(input('Enter the gross pay: '))
+    bonus = float(input('Enter the amount of bonuses: '))
+    show_pay_contrib(gross_pay)
+    show_bonus_contrib(bonus)
+
+# The show_pay_contrib function accepts the gross
+# pay as an argument and displays the retirement
+# contribution for that amount of pay.
+def show_pay_contrib(gross):
+    contrib = gross * CONTRIBUTION_RATE
+    print('Contribution for gross pay: $', format(contrib, ',.2f'), sep='')
+
+# The show_bonus_contrib function accepts the
+# bonus amount as an argument and displays the
+# retirement contribution for that amount of pay.
+def show_bonus_contrib(bonus):
+    contrib = bonus * CONTRIBUTION_RATE
+    #changes gross to bonus
+    print('Contribution for bonus pay: $', format(contrib, ',.2f'), sep='')
+# Call the main function.
+main()
