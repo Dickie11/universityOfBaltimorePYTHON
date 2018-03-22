@@ -1,0 +1,32 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/23/2016
+#David Dickens
+#FBI Alert
+#where you see What happens here? explain the line using comments
+print('\tWelcome to the look world tech\n\t 4700 west eaton ave\n\t brooklyn NY 21201\n\t 410-273-8900')
+
+Ct=-1#counter
+
+#location=USA,France,Russia,Cuba
+
+while Ct<=4: #allows the code to be ran 5 times
+    Ct=Ct+1 #adds one the count each time the program is ran
+    name=input('Pease enter your full name  :"""') #user instructions
+    location=input('Enter country  :"""')
+    age=input('enter age  :"""')
+    gender=input('enter male or female  :""""')
+
+    if location ==('USA') and (age>='21' and age<='51'): #if the location is usa and the age is between 21 and 51 is prints name and location
+        print('\t\n',name, '\t\n',location) #program prints name and location
+    elif location==('France') and (age>='41' and age<'59'): #if the location is france and the age is between 41 and 59 is prints name location and gender
+        print('\n\t',name,"\n\t",location,'\n\t', gender)
+        if name == 'Shaggy Rogers'and age=='47' and gender== 'Male':#if the name is Shaggy Rogers and the age is 47 is prints call fbi or says unidentified visitor
+            print('\n\t CALL FBI @ 410-XXX-XXXX')
+        else:
+            print('\n\t Un identified visitor')
+
+
+#Correct any errors
+#you may use any of the names listed below as your test name
+#pepe le pew; Charlie brown; bender; ned flanders; harvey birdman etc
