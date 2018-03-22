@@ -1,0 +1,23 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 4/13/2016
+#David Dickens
+#program 4
+
+#4
+
+#Please comment the following and explain it's output after you modify the code to run the attached file
+
+
+
+#Please copy and past the
+
+import csv
+#changed file name after saving the cvs file in the same directory as the program .py file
+tf= open('Baltimore_City_Employee_Salaries_FY2014.csv')
+csv_tf = csv.reader(tf)
+for row in csv_tf:
+  print (row,'\n')
+
+# the program opens the cvs file then reads the row of cvs data then prints all of it.
+
