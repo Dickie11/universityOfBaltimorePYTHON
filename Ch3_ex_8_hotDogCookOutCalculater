@@ -1,0 +1,10 @@
+#Chapter 3: Hot Dog Cookout Calculater
+guest=int(input("number of guests attending cookout"))
+dogs=format((guest/10.0)+0.5, '.0f')
+buns= format((guest/8.0)+0.5, '.0f')
+ldogs=guest%10
+lbuns=guest%8
+print("you will need", dogs,"packs of hot dogs")
+print("you will need", buns,"packs of hot dog buns")
+print("you will have", ldogs, "hot dogs left over")
+print("you will have", lbuns, "hot dog buns lef
