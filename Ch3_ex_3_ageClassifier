@@ -1,0 +1,11 @@
+#Chapter 3:Age Classifier
+age=int(input("what is the age of the person"))
+if age<=1:
+    print("they are an infant")
+elif age>1 and age<13:
+    print("they are a child")
+elif age>=13 and age<20:
+    print("they are a teenager")
+else:
+    age>=20
+    print("They are an adult")
