@@ -1,0 +1,20 @@
+#how do we validate
+#without the variable it would create an infinite loop
+count=1
+#Displays when the correct username and password are entered
+correct=("logged in succesfully")
+
+while count !=2:
+    username = input('username please:')
+    password = input('password please:')
+#explain the following statement using a comment
+    count+=1
+    print(count)
+#in your submission change the name to your name and the password to a new password
+if (username== 'David Dickens' and password== 'COSC'):
+    print(correct + username)
+else:
+    count==3
+    print('please try again in 30 minutes')
+
+#submit your modified code via sakai with both code and pr
