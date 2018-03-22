@@ -1,0 +1,34 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/2/2016
+#David Dickens
+#Magic Date
+
+#Please correct and write the correct comment explaination for each line of code
+
+#input month
+month = int(input('Enter the month in numeric form: '))
+#input day
+day = int(input('Enter the day of the month: '))
+#input year two digit format
+year = int(input('Enter the year in two digit format: '))
+#exclude invalid options
+if month > 12 and month < 1:
+#error message
+    print('Error: invalid month input')
+#exclude invalid options
+elif day > 31 and day < 1:
+#error message
+    print('Error: invalid day input')
+#exclude invalid options
+elif year > 99 and year < 0:
+#error message
+    print('Error: invalid year input')
+else:#display input info
+    print('The date is ', month, '/', day, '/', year)
+#formula for "magic date"
+if (day * month) == year:
+#display is it is a "magic date"
+    print ('This is a magic date.')
+else:#display is it is not a "magic date"
+    print ('This is not a magic date.')
