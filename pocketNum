@@ -1,0 +1,59 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/2/2016
+#David Dickens
+#Assignment description
+
+#Make the following program take in a float number and
+#output the colors blue ,gold , and purple.
+#Write commemts to descride the actions of each if statememnts or group of if statements
+
+
+pocketNum = 0
+outputStr = ''
+
+# Get the pocket number from the user.
+pocketNum = int(input('Enter a pocket number from 0 to 36: '))
+
+#What does this line of code do? #this code excludes invalid entries below 0 or above 36
+if pocketNum < 0 or pocketNum > 36:
+    outputStr = 'Error: Invalid input'
+
+# Determine the color of the pocket number.
+else:
+    #Explain the output / actions of the following code? #if the variable value is between the givin range(1-10) it is remainder divided by 2 if no remainder the output is blue if remainder gold
+    if pocketNum >= 1 and pocketNum <= 10:
+        if pocketNum % 2:
+            outputStr = 'Gold'
+        else:
+            outputStr = 'Blue'
+
+    # How is this code different from the above code? #if the variable value is between the givin range(11-18) it is remainder divided by 2 if no remainder the output is blue if remainder gold
+
+    elif pocketNum >= 11 and pocketNum <= 18:
+        if pocketNum % 2:
+            outputStr = 'Gold'
+        else:
+            outputStr = 'Blue'
+
+    # If this code is applied how is it different from the above code?#if the variable value is between the givin range(19-28) it is remainder divided by 2 if no remainder the output is blue if remainder gold
+    elif pocketNum >= 19 and pocketNum <= 28:
+        if pocketNum % 2:
+            outputStr = 'Gold'
+        else:
+            outputStr = 'Blue'
+
+    # Fix the code below to produce an odd or even result #if the variable value is between the givin range(not 29 and equal to 36) it is remainder divided by 2 if no remainder the output is purple if remainder gold
+    elif pocketNum != 29 and pocketNum == 36:
+        if pocketNum % 2:
+            outputStr = 'Gold'#if odd number it will be gold
+        else:
+            outputStr = 'Purple'#if even number it will be purple
+
+    # Pocket 0 is green. #if pocketNum is equal to 0 the output is green
+    else:
+        pocketNum==0
+        outputStr = 'Green'      # Zero
+
+# Display the output.
+print(outputStr)
