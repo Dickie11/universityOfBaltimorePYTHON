@@ -1,0 +1,73 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/29/2016
+#David Dickens
+#Automobile Costs
+
+
+def main():
+    #getLoan
+    loan = getLoan()
+    #get insurance
+    insure = getInsure()
+    # get gas
+    gas = getGas()
+    # get oil
+    oil = getOil()
+    # get tires
+    tires = getTires()
+    #get maintenance
+    maintenance = getMaintenance()
+    #show expenses
+    expenses = showExpenses(loan, insure, gas, oil, tires, maintenance)
+
+
+
+
+#definition of functions
+#loan definition
+def getLoan():
+    loan = float(input('what is the monthly loan amount?: '))
+    return loan
+
+#insurance definition
+def getInsure():
+    insure = float(input('What is the monthly insurance amount?: '))
+    return insure
+
+#Gas definition
+def getGas():
+    gas = float(input('What is the monthly gas amount?: '))
+    return gas
+
+#Oil definition
+def getOil():
+    oil = float(input('What is the monthly oil amount?: '))
+    return oil
+
+#Tires definition
+def getTires():
+    tires = float(input("What is the monthly tires amount?: "))
+    return tires
+
+#maintenance definition
+def getMaintenance():
+    maintenance = float(input('What is the monthly maintenance amount?: '))
+    return maintenance
+
+#expenses definition
+def showExpenses(loan,insure,gas,oil,tires,maintenance):
+    totalMonth = loan+insure+gas+oil+tires+maintenance
+    totalYear = totalMonth*12
+    print(' The monthly Loan amount is: $', format(loan, '.2f'))
+    print('The monthly Insurance amount is: $', format(insure, '.2f'))
+    print(' The monthly Gas amount is: $', format(gas, '.2f'))
+    print(' The monthly Oil amount is: $', format(oil, '.2f'))
+    print(' The monthly Tire expense is: $', format(tires, '.2f'))
+    print(' The monthly Maintenance amount is: $', format(maintenance, '.2f'))
+    print(' The total monthly expense: $', format(totalMonth, '.2f'))
+    print(' the total yearly expense: $', format(totalYear, '.2f'))
+
+
+#return
+main()
