@@ -1,0 +1,16 @@
+#Chapter 3: areas of a rectangle
+l1=int(input("what is the length of the first rectangle"))
+w1=int(input("what is the width of the first rectangle"))
+area1=l1*w1
+
+l2=int(input("what is the length of the second rectangle"))
+w2=int(input("what is the width of the second rectangle"))
+area2=l2*w2
+
+if area1>area2:
+    print("the first rectangle is has a larger area, the area is", area1)
+elif area1>area2:
+    print("the second rectange has a larger area, the area is", area2)
+else:
+    area1==area2
+    print("the areas of the rectangles are the same, the area\'s are", area1)
