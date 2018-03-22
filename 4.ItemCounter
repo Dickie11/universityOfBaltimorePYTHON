@@ -1,0 +1,28 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 4/13/2016
+#David Dickens
+#New Extra Credit 4.Item Counder
+
+def main():
+    total=0
+    try:
+        name_file= open('names.txt', 'r')
+        name_list= name_file.readline()
+        while name_list != '':
+            amount=(name_list)
+            amount=1
+            total+=amount
+            name_list= name_file.readline()
+
+
+
+        name_file.close()
+
+        print(total)
+
+    except Exception as err:
+        print(err)
+
+main()
+
