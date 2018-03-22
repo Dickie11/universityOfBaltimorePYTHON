@@ -1,0 +1,12 @@
+#Chapter 3: Mass and Weight
+mass=int(input("enter the objects mass:"))
+weight=int(mass*9.8)
+print("the object weighs:", weight,"newtons")
+if weight>500:
+    print("the object is too heavy")
+elif weight<500 and weight>100:
+    print("")
+
+else:
+    weight<100
+    print("the object is too light")
