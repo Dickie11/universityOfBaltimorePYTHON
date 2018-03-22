@@ -1,0 +1,9 @@
+#Chapter 3: Magic date
+month=int(input("input a month in numeric form:"))
+day=int(input("input a day in numeric form:"))
+year=int(input("enter a two digit year"))
+if month*day==year:
+    print("this is a magic date")
+else:
+    month*day!=year
+    print("this is not a magic date")
