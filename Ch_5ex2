@@ -1,0 +1,45 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/29/2016
+#David Dickens
+#Ch_5 ex2
+
+############################################################################
+#==>Please  correct all errors for full credit and explain corrections in comments
+############################################################################
+# Create a global variable.
+number = 0
+def main():
+    global number
+    #indent so the statements are in block format
+    number = int(input('Enter a number: '))
+    show_number()
+def show_number():
+    print('The number you entered is', number)
+
+#Call the main function.
+main()
+
+############################################################################
+#==>Please  correct all errors for full credit and explain corrections in comments
+############################################################################
+
+
+# Create a global variable.
+number = 0
+num_ber =0
+def main():
+    global number
+    #redefined number and num_ber
+    number = int(input('Enter a number: '))
+    num_ber = int(input('enter a number: '))
+    #passed arguments
+    show_number(number,num_ber)
+def show_number(number,num_ber):
+    #set the_number equal to number+num_ber
+    the_number= number+num_ber
+    #changed print statement to reflect the operation being performed
+    print('The sum of both numbers', the_number)
+
+#Call the main function.
+main()
