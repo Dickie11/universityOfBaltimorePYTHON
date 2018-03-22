@@ -1,0 +1,25 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 4/13/2016
+#David Dickens
+#New Extra Credit 6.Average of numbers
+
+
+def main():
+    total=0.0
+    try:
+        numbers_file=open('numbers.txt', 'r')
+        for line in numbers_file:
+            amount=int(line)
+            total +=amount
+
+        numbers_file.close()
+
+        average=total/3
+
+        print(int(average))
+
+    except Exception as err:
+        print(err)
+
+main()
