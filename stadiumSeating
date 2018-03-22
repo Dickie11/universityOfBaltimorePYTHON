@@ -1,0 +1,62 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 3/30/2016
+#David Dickens
+#Stadium Seating
+
+
+#Global Constants
+CLASS_A_SEATS = float(20)
+CLASS_B_SEATS = float(15)
+CLASS_C_SEATS = float(10)
+
+def main():
+    countAseats = getAcount()
+    countBseats = getBcount()
+    countCseats = getCcount()
+    incomeAseats = setAincome(countAseats)
+    incomeBseats = setBincome(countBseats)
+    incomeCseats = setCincome(countCseats)
+    showincome(incomeAseats,incomeBseats,incomeCseats)
+
+
+def getAcount():
+    countAseats=float(input('Enter the amount of Class A Seats: '))
+    return countAseats
+
+def getBcount():
+    countBseats=float(input('Enter the amount of Class B Seats:  '))
+    return countBseats
+
+def getCcount():
+    countCseats=float(input('Enter the amount of Class C Seats:  '))
+    return countCseats
+
+def setAincome(countAseats):
+    incomeAseats= countAseats*CLASS_A_SEATS
+    return incomeAseats
+
+def setBincome(countBseats):
+    incomeBseats= float(format(countBseats*CLASS_B_SEATS, '.2f'))
+    return incomeBseats
+
+def setCincome(countCseats):
+    incomeCseats= float(format(countCseats*CLASS_C_SEATS, '.2f'))
+    return incomeCseats
+
+def showincome(incomeAseats,incomeBseats,incomeCseats):
+    totalincome= format(incomeAseats+incomeBseats+incomeCseats, '.2f')
+    print('Income from A Seats: $ ', format(incomeAseats, '.2f'))
+    print('Income from B Seats: $ ', format(incomeBseats, '.2f'))
+    print('Income from C Seats: $ ', format(incomeCseats, '.2f'))
+    print('The Total Income from A, B, and C seats is: $ ', totalincome )
+
+
+
+main()
+
+
+
+
+
+
