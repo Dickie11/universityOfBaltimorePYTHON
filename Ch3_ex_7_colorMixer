@@ -1,0 +1,28 @@
+#Chapter 3: Color Mixer
+print("the primary colors are red, blue, and yellow")
+c1=str(input("enter the first primary color"))
+c2=str(input("enter the second primary color"))
+
+if c1==str('red') and c2==str('blue'):
+    print("purple")
+elif c1==str('blue') and c2==str('red'):
+    print("purple")
+elif c1==str('red') and c2==str('yellow'):
+    print("orange")
+elif c1==str('yellow') and c2==str('red'):
+    print("orange")
+elif c1==str('blue') and c2==str('yellow'):
+    print("green")
+elif c1==str('yellow') and c2==str('blue'):
+    print("green")
+elif c1==str('red') and c1==str('red'):
+    print("red")
+elif c1==str('blue') and c2==str('blue'):
+    print("blue")
+elif c1==str('yellow') and c2==str('yellow'):
+    print("yellow")
+elif c1!= str('red') or c1!=str('blue') or c1!=str('yellow'):
+    print("error enter a primary color")
+else:
+    c2!=str('red') or c2!=('blue') or c2!=('yellow')
+    print("error enter a primary color")
