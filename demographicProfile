@@ -1,0 +1,128 @@
+#University of Baltimore AIT
+#COSC 151 - Computer Programming I Spring 2016
+#DATE 4/21/2016
+#David Dickens
+#Demographic Profile
+
+#1.method: a function that belongs to an object, and performs some operation using that object
+#2.string: A sequence of scharacters used as data
+#3.selection statement: statement that allows a program to controll when it executes certain instructions
+#4.loop-continuation-condition:
+#5.step value: The third argument passed to the rnage function
+#6.global variable: a variable created outside of all of the functions in a program than is accessable by any statement in the program
+#7.compiler: is a program that translates a high-level language program into a separate machine language program
+#8.machine language: Binary Language
+#9.algorithm: A set of well defined logical steps that must be taken to perform a task
+#10.Keyword: type of argument in which a value is passed to a parameter
+#11.operator precedence: mathmatical order of operations
+#12.iteration: execution of the body of a loop
+#13.off-by-one-error: logic error involving the discrete equivalent of a boundar condition
+#14.argument: the data you want to be displayed on the screen
+#15.function: a piece of pre written code that performs and operation
+
+def main():
+    group1=0
+    group2=0
+    group3=0
+    USAaddresscount=0
+    fAddress=0
+    gender=input('Enter gender, enter m for male or f for female')
+    fName=input('Please enter your full name: ')
+    age=int(input('Please enter your age: '))
+    if age<18:
+        group1+=1
+    elif age>=18 and age<=30:
+        group2+=1
+    elif age>30 and age<=67:
+        group3+=1
+    sNumber=str(input('Please enter your current streen number: '))
+    sAddress=input('Please enter the street you live on: ')
+    addLength=int(input('Please enter your length of residence at this address: '))
+    if addLength<5:
+        laddress=input('Please enter your last address: ')
+        USAaddress=input('Was it in the United States? If yes enter y, if no enter n: ')
+        if USAaddress== 'y' or 'Y':
+            USAaddresscount+=1
+            state=input('Please enter the state of your last address: ')
+        elif USAaddress== 'n' or 'N':
+            fAddress+=1
+    DOBm=str(input('Please enter the month you were born: '))
+    DOBd=str(input('Please enter the calander day you were born in xx format: '))
+    DOBy=int(input('please enter the year you were born in xxxx format: '))
+    if DOBy>2007:
+        print('Thank you for you Input: ')
+    elif DOBy<1966:
+        print('Thank you for your Input: ')
+    elif DOBy>=1983 and DOBy<2007:
+        print('Thank you for you Input: ')
+    POB=input('Please enter your place of birth: ')
+    UScitizen=input('Are you a U.S. citizen? if yes enter y if no enter n: ')
+    if UScitizen== 'y' or UScitizen=='Y':
+        print('Thank you for your input')
+    elif UScitizen== 'n' or UScitizen=='N':
+        work=input('Can you legally work in the U.S.? if yes enter y, if no enter n: ')
+        if work=='n' or work=='N':
+            print('Thank you for your input')
+        elif work=='y' or work== 'Y':
+            working=input('are you currently working? if yes enter y, if no enter n: ')
+            if working== 'n' or working=='N':
+                print('thank you for you input: ')
+            elif working== 'y' or working=='Y':
+                occupation=input('Enter your current occupation: ')
+    rState=input('Are you a resident of your current state? if yes enter y, if no enter n: ')
+    if rState== 'n' or rState=='N':
+        print('Thank you for your input')
+    elif rState=='y' or rState=='Y':
+        print('Thank you for your input')
+    emporschool=input('are you currently employed or in school? enter employed, or school')
+    if emporschool== 'school' or emporschool=='School':
+        school=input('Please enter the school you are currently attending: ')
+        edLvl=int(input('Please enter your highest level of education completed in numbers ex:\
+        freshman in college would be 13: '))
+        if edLvl>=12 and edLvl<16:
+            HSdiploma=1
+            print('Thank you for your input')
+        elif edLvl>=16:
+            cDegree=1
+            print('')
+    income=float(input('What is your current level of income?: '))
+    hourly=float(input('What is your current hourly rate: '))
+    tips=float(input('if you make tips enter the average amount, if not enter 0: '))
+    commission=float(input('If you make commission enter the average amount\
+     per commission if not enter 0'))
+    idealSalary=float(input('What is your ideal salary?: '))
+    kids=input('Do you have kids? if yes enter y, if no enter n: ')
+    if kids== 'y' or kids== 'Y':
+        kids=int(input('How many kids do you have?: '))
+        kidsnames=input('What are your kids names?: ')
+    elif kids=='n' or kids== 'N':
+        print('Thank you for your input')
+    married=input('Are you maried? if yes enter y, if no enter n: ')
+    if married=='y' or married== 'Y':
+        yMarried=int(input('How many years have you been married?: '))
+        if yMarried==1:
+            dateMarried=input('What was the date of your wedding?: ')
+        elif yMarried==10:
+            dateMarried=input('What was the date of your wedding?: ')
+        elif yMarried==50:
+            dateMarried=input('What was the date of your wedding?: ')
+    elif married=='n' or married== 'N':
+        print('Thank you for your input')
+    hobbies=input('Please enter your favorite hobbies: ')
+    if gender=='m' or gender=='M':
+        title='Mr.'
+    elif gender=='f' or gender== 'F' and married=='y' or married=='Y':
+        title='Mrs.'
+    elif gender=='f' or gender== 'F' and married=='n' or married=='N':
+        title='Miss'
+    print('Thank you for your time ',title,fName,'we appreciate your cooperation.')
+
+main()
+
+
+
+
+
+
+
+
